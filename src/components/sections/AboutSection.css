@@ -1,0 +1,109 @@
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xxl);
+    align-items: center;
+}
+
+.about__title {
+    font-size: var(--font-size-h2);
+    margin-bottom: var(--spacing-lg);
+}
+
+.about__paragraph {
+    font-size: var(--font-size-base);
+    line-height: 1.8;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--spacing-md);
+}
+
+.about__values {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.about__value {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+}
+
+.about__value-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.about__value-title {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-black);
+}
+
+.about__value-text {
+    color: var(--color-gray-dark);
+    line-height: 1.6;
+}
+
+.about__image-placeholder {
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-dark) 100%);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.about__stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    width: 100%;
+}
+
+.about__stat {
+    text-align: center;
+    padding: var(--spacing-lg);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(10px);
+}
+
+.about__stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-red);
+    margin-bottom: var(--spacing-xs);
+}
+
+.about__stat-label {
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .about__image-placeholder {
+        min-height: 18.75rem;
+    }
+
+    .about__stat-number {
+        font-size: 2.25rem;
+    }
+}

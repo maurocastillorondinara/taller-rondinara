@@ -1,0 +1,31 @@
+.section-container {
+    padding: var(--spacing-xxl) 0;
+    min-height: 400px;
+}
+
+.section-container--white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.section-container--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.section-container--gray {
+    background-color: var(--color-gray-light);
+    color: var(--color-black);
+}
+
+.section-container--red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-container {
+        padding: var(--spacing-xl) 0;
+    }
+}
