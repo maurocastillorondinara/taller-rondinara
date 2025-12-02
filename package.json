@@ -6,11 +6,11 @@
   "homepage": "https://maurocastillorondinara.github.io/taller-rondinara",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "/home/pipo/.nvm/versions/node/v22.17.0/bin/node node_modules/.bin/vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "/home/pipo/.nvm/versions/node/v22.17.0/bin/node node_modules/.bin/gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
